@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: music-app
+    env: node
+    region: frankfurt
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      DATABASE_URL: "sqlite:./database.db"

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kişisel Müzik Uygulaması</title>
+  <link rel="stylesheet" href="player.css">
+</head>
+<body>
+  <h1>🎵 Kişisel Spotify</h1>
+
+  <div id="loginBox">
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Şifre">
+    <button onclick="login()">Giriş</button>
+    <button onclick="register()">Kayıt Ol</button>
+  </div>
+
+  <div id="player" style="display:none">
+    <h2>Müzikler</h2>
+    <div id="musicList"></div>
+    <audio id="audio" controls></audio>
+
+    <div id="adminPanel" style="display:none">
+      <h3>🎵 Müzik Yükle (Admin)</h3>
+      <input id="musicTitle" placeholder="Müzik adı">
+      <input id="musicFile" type="file">
+      <button onclick="uploadMusic()">Yükle</button>
+    </div>
+  </div>
+
+<script src="player.js"></script>
+</body>
+</html>
